@@ -33,7 +33,7 @@ def start_io():
         break
 
     start = time.time_ns()
-    points = util.sort(util.generate_points(3, 20))
+    points = util.sort(util.generate_points(dim, num))
     Point.euclidean_count = 0
     res = solver.get_closest_points(points, points)
     end = time.time_ns()
