@@ -1,8 +1,6 @@
 from __future__ import annotations
 from math import sqrt
 
-euclidean_count: int = 0
-
 
 class Point:
     euclidean_count: int = 0
