@@ -51,19 +51,3 @@ def get_closest_points(points: list[Point], intact_p: list[Point]) -> tuple[floa
 
     return closest
 
-
-if __name__ == "__main__":
-    for _ in range(200):
-        points = util.sort(util.generate_points(3, 20))
-        Point.euclidean_count = 0
-        dnc = get_closest_points(points, points)
-        divnconq_num = Point.euclidean_count
-        # Point.euclidean_count = 0
-        brute = __get_brute_force__(points)
-        # brute_num = Point.euclidean_count
-
-        if not (brute[1][0] == dnc[1][0] and brute[1][1] == dnc[1][1]):
-            print("ratna kontoooooooooool")
-
-        print("brute: ", divnconq_num)
-        util.visualise(points, dnc[1])
